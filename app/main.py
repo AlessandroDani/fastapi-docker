@@ -39,8 +39,6 @@ def get_db_connection():
 ## The command for create notes is:
 ## curl -X POST http://localhost:8000/notes -H "Content-Type: application/json" -d "{\"titulo\": \"Mi título2\", \"contenido\": \"Este es el contenido de la nota con titulo2.\"}"
 
-
-{"mensaje":"Nota guardada correctamente"}
 @app.post("/notes")
 async def create_note(nota: Nota):
     try:
