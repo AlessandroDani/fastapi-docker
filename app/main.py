@@ -55,7 +55,6 @@ async def create_note(nota: Nota):
     return {"mensaje": "Nota guardada correctamente"}
 
 @app.get("/notes")
-@app.get("/notes")
 async def get_notes():
     try:
         conn = get_db_connection()
